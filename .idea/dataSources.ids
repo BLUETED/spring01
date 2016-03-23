@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - test1@localhost" uuid="f4ee38f3-616f-4937-b8bc-e2582477aeed">
+    <database-info product="MySQL" version="5.7.11-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="test1"/>
+      <table id="2" parent="1" name="students"/>
+      <table id="3" parent="1" name="s_user"/>
+      <column id="4" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="5" parent="2" name="username">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="6" parent="2" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="7" parent="2" name="gender">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="8" parent="2" name="hobby">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="9" parent="2" name="email">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="10" parent="2" name="birthday">
+        <data-type>date</data-type>
+      </column>
+      <column id="11" parent="2" name="grade">
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="12" parent="2" name="username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="13" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="14" parent="2" name="username">
+        <columns>username</columns>
+        <underlying-index>username</underlying-index>
+      </key>
+      <column id="15" parent="3" name="userID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="16" parent="3" name="userName">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="17" parent="3" name="logonName">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="18" parent="3" name="logonPwd">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="19" parent="3" name="sex">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="20" parent="3" name="birthday">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="21" parent="3" name="education">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="22" parent="3" name="telephone">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="23" parent="3" name="interest">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="24" parent="3" name="path">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="25" parent="3" name="filename">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="26" parent="3" name="remark">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <key id="27" parent="3" name="PRIMARY">
+        <columns>userID</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

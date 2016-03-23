@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.ui.theme" value="simple"/>
+    <package name="user" extends="struts-default" namespace="/user">
+        <action name="login" class="com.itheima.actions.UserAction" method="login">
+            <result name="success">/login/home.jsp</result>
+            <result name="login">/login/login.jsp</result>
+        </action>
+        <action name="list" class="com.itheima.actions.UserAction" method="list">
+            <result name="success">/user/list.jsp</result>
+        </action>
+
+    </package>
+</struts>
